@@ -13,9 +13,8 @@ import org.codehaus.cargo.module.merge.MergeException;
 import org.codehaus.cargo.module.merge.MergeProcessor;
 
 /**
- * properties fájlok merge-elését végző merge processzor
- * @author jmalyik
- *
+ * merging properties files
+ * interestingly cargo give them sometimes as InputStream, not Properties
  */
 public class PropertiesMerger implements MergeProcessor
 {
