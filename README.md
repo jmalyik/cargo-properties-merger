@@ -8,6 +8,7 @@ For some reason there is no properties merger, so I wrote one.
 
 If you would like to use it in your project, you have to clone the project, install it with mvn clean install and reference it in the following way:
 
+```xml
 <plugin>
     <groupId>org.codehaus.cargo</groupId>
     <artifactId>cargo-maven2-plugin</artifactId>
@@ -23,11 +24,13 @@ If you would like to use it in your project, you have to clone the project, inst
         </dependency>
     </dependencies>
 </plugin> 
+```
 
 ### merge.xml 
 
 In the merge.xml, you have to reference the PropertiesMerger:
 
+```xml
 <?xml version="1.0"?>
 <uberwar>
     <wars>
@@ -44,5 +47,6 @@ In the merge.xml, you have to reference the PropertiesMerger:
         -->
     </merges>
 </uberwar>
+```
 
 That's all.
